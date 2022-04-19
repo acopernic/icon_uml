@@ -152,4 +152,4 @@ sprite $commscope_era [150x146/16] {
 !define MAN_COMMSCOPEERA(_alias, _label, _shape) ENTITY(_shape,commscope_era,_label, _alias,MAN COMMSCOPEERA)
 !define MAN_COMMSCOPEERA(_alias, _label, _shape, _color) ENTITY(_shape,_color,commscope_era,_label, _alias,MAN COMMSCOPEERA)
 skinparam folderBackgroundColor<<MAN_COMMSCOPEERA>> White
-
+@enduml
