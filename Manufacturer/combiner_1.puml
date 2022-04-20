@@ -44,7 +44,7 @@ DrU9hdc9Oruz-6kRPAwkescfg9xzny7yjJDNOH9_FZmlO2vzF0tb6Cr8yePMfcQ7J3R6L35MOZgegiIU
 ZFR1CReH8fnM3SyLpqvczRXCr8wj8DjmLNPdBe7i6OHEgovDOzwONY1G3Lo53GwUacBn4AHtgQNK77r-1MDYKciWPhnKfK4vF1f5M_FHafrCgvwm77tQ1T5J
 4IEK0ZbdUMbqzCn4kFh1iaQ_WxRYnF1N1_yF
 }
-!define DEV_DATABASE(_alias) ENTITY(rectangle,black,combiner_1{scale=2},_alias,DEV DATABASE)
+!define DEV_DATABASE(_alias,_scale) ENTITY(rectangle,black,combiner_1,_alias,_scale,DEV DATABASE)
 !define DEV_DATABASE(_alias, _label) ENTITY(rectangle,black,combiner_1,_label, _alias,DEV DATABASE)
 !define DEV_DATABASE(_alias, _label, _shape) ENTITY(_shape,black,combiner_1,_label, _alias,DEV DATABASE)
 !define DEV_DATABASE(_alias, _label, _shape, _color) ENTITY(_shape,_color,combiner_1,_label, _alias,DEV DATABASE)
