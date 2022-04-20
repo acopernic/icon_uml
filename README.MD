@@ -13,11 +13,8 @@ Example:
 ```
 @startuml
 
-!define SPRITESURL xxx
-!includeurl SPRITESURL/xxx.puml
-!includeurl SPRITESURL/xxx.puml
-!includeurl SPRITESURL/xxx.puml
-!includeurl SPRITESURL/xxx.puml
+!define SPRITESURL https://acopernic.github.io/icon_uml/
+!includeurl SPRITESURL/Manufacturer/commscope_era.puml
 
 title Gil Barbara's logos example
 
@@ -35,19 +32,9 @@ daemon --> cassandra
 @enduml
 ```
 
-![Example](http://www.plantuml.com/plantuml/png/VO_FIWCn4CRlUOgq29vsLwyYfGWYWWTfzUPbTZFTXisVc9bO7zyqMHOzM0Z9JBvlVZEp9OR8oHeXLWeFsg7Sl-wUtnxtxxiNUMGETDTr4KxjgFcO-aGO1-yO7RU3jrdfqQ1Jq8tQz13pWIOOS6TcGo5gHkg-RjkRRax4Ihl198Kfcb-zkeC1cjgGo_vpJ72OuBB3iz7kecK08d0gpY31cWtA9staGvt-cgJneoU9ts23GI5eqYvanKhhdH-EqLkK75EM8WuCRio4zVrLsM3puKxOGmXh2IHhA3uJfc8fAsoALCA_W3f-9YZ0tAhOQYWKCFH0nRQiK45BAaHj9vlDJ2_tEPqfzP5D_bcgf11RT2fPymC0)
-
-The list of available sprites is [here](sprites-list.md).
+![Example](https://www.planttext.com/?text=ZOx12i8m38RlUufkU1guueuYiei7GK4slGbIksmhT6b9q_Tt0uNjvYr_VhulgG8huZZQ96sXCmYYkTNd-wbvr1SnCFkmbr9fvu7GwA8tFCHtOPmqsk5hucII6jGsjX39Bc1vLHWxfJaIaDHk7CDiUG6fmi_t23Ghx2s8xB1PzSSdrk219-Ck4oe8-gR_c7B5bCbl4lasNwoJ2h2T7la0)
 
 You can play around and test ideas with [Online PlantUML Editor](http://plantuml.com/plantuml/uml).
-
-## Build
-
-Sprites are built with provided [svgsFolderUrl2plantUmlSprites.groovy](svgsFolderUrl2plantUmlSprites.groovy) script. To update sprites from icons in [Gil Barbara's repo](https://github.com/gilbarbara/logos) just re-run:
-
-```bash
-./svgsFolderUrl2plantUmlSprites.groovy https://github.com/gilbarbara/logos/tree/master/logos
-```
 
 ## Note
 
