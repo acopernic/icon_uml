@@ -48,7 +48,7 @@ ZFR1CReH8fnM3SyLpqvczRXCr8wj8DjmLNPdBe7i6OHEgovDOzwONY1G3Lo53GwUacBn4AHtgQNK77r-
 !define DEV_DATABASE(_alias, _label) ENTITY(rectangle,black,combiner_1,_label, _alias,DEV DATABASE)
 !define DEV_DATABASE(_alias, _label, _shape) ENTITY(_shape,black,combiner_1,_label, _alias,DEV DATABASE)
 !define DEV_DATABASE(_alias, _label, _shape, _color) ENTITY(_shape,_color,combiner_1,_label, _alias,DEV DATABASE)
-skinparam folderBackgroundColor<<DEV DATABASE>> White
+skinparam folderBackgroundColor<<DEV DATABASE>> Blue
 skinparam bordercolor<<DEV DATABASE>> White
 @enduml
 
