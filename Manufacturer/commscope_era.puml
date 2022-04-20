@@ -152,5 +152,5 @@ sprite $commscope_era {
 !define DEV_ANDROID(_alias, _label, _shape) ENTITY(_shape,black,commscope_era,_label, _alias,DEV ANDROID)
 !define DEV_ANDROID(_alias, _label, _shape, _color) ENTITY(_shape,_color,commscope_era,_label, _alias,DEV ANDROID)
 skinparam folderBackgroundColor<<DEV ANDROID>> White
-skinparam bordercolor<<DEV ANDROID>> White
+skinparam bordercolor<<DEV ANDROID>> Blue
 @enduml
