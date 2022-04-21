@@ -26,7 +26,7 @@ skinparam Arrow {
 !definelong SpriteEntityColoring(e_stereo)
    skinparam rectangle<<e_stereo>> {
     BackgroundColor SPRITE_BG_COLOR
-    BorderColor transparent
+    BorderColor White
     Shadowing false
     }
 !enddefinelong
