@@ -45,11 +45,11 @@ ZFR1CReH8fnM3SyLpqvczRXCr8wj8DjmLNPdBe7i6OHEgovDOzwONY1G3Lo53GwUacBn4AHtgQNK77r-
 4IEK0ZbdUMbqzCn4kFh1iaQ_WxRYnF1N1_yF
 }
 
-!definelong RAD_Combiner21(e_alias,e_label,e_techn, e_scale)
-SpriteEntity(rectangle,e_alias,e_label,e_techn,#D86613,e_scale,combiner21,combiner21)
+!definelong RAD_Combiner21(e_type, e_alias,e_label,e_techn, e_scale)
+SpriteEntity(e_type, e_alias, e_label, e_techn, #D86613, e_scale, combiner21, combiner21)
 !enddefinelong
-!definelong RAD_Combiner21(e_alias,e_label,e_techn) 
-SpriteEntity(rectangle, e_alias,e_label,e_techn,#D86613,combiner21,combiner21)
+!definelong RAD_Combiner21(e_type, e_alias, e_label, e_techn) 
+SpriteEntity(e_type, e_alias, e_label, e_techn, #D86613, combiner21, combiner21)
 !enddefinelong
 @enduml
 
