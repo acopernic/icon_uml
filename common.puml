@@ -1,60 +1,66 @@
 /'
-    Provides macros too easily add sprites in different manners
+    Macro pour différente taille de sprites
+	copernic v1.0 - 20220421
 '/
 
 
 /'
 ........................................
+' Colors
+' ##################################
+'!define SPRITE_COLOR #0072C6 'Blue
+!define SPRITE_COLOR #000000 'Black
+!define SPRITE_BG_COLOR #FFFFFF 'White
+'!define SPRITE_BORDER_COLOR #3C7FC0 'Blue
+!define SPRITE_BORDER_COLOR #FFFFFF 'White
+!define SRPITE_SYMBOL_COLOR SPRITE_COLOR
 
-Adds a sprite with color and scale
+' Styling
+' ##################################
 
-3 parameters
+!define TECHN_FONT_SIZE 12
 
-    e_sprite  The sprite to add  Ex: my_sprite
-    e_color   The sprite color   Ex: Red
-    e_scale   The sprite scale   Ex: 0.5
+skinparam defaultTextAlignment center
 
-........................................
-'/
-!define SPRITE_PUT(e_sprite, e_color = "Black", e_scale = "1") <color:e_color><$e_sprite{scale=e_scale}></color>
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
 
+skinparam rectangle {
+    StereotypeFontSize 12
+}
 
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
 
-/'
-........................................
+!definelong SpriteEntityColoring(e_stereo)
+skinparam rectangle<<e_stereo>> {
+    BackgroundColor SPRITE_BG_COLOR
+    BorderColor SPRITE_BORDER_COLOR
+}
 
-Creates an aliased entity with a sprite and stereotype
+' Layout
+' ##################################
 
-6 parameters
+!definelong LAYOUT_AS_SKETCH
+skinparam backgroundColor #EEEBDC
+skinparam handwritten true
+skinparam defaultFontName "Comic Sans MS"
+center footer <font color=red>Warning:</font> Created for discussion, needs to be validated
+!enddefinelong
 
-    e_alias   The entity alias       Ex: my_alias
-    e_stereo  The entity stereotype  Ex: my_stereotype 
-    e_sprite  The sprite to add      Ex: my_sprite
-    e_color   The sprite color       Ex: Red
-    e_scale   The sprite scale       Ex: 0.5
-    e_type    The entity type        Ex: component
+!define LAYOUT_TOP_DOWN top to bottom direction
+!define LAYOUT_LEFT_RIGHT left to right direction
 
-........................................
-'/
-!define SPRITE_ENT(e_alias, e_stereo, e_sprite, e_color = "Black", e_scale = "1", e_type = "rectangle") e_type "<color:e_color><$e_sprite{scale=e_scale}></color>" as e_alias <<e_stereo>>
+' Elements
+' ##################################
 
+!definelong SpriteEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
+rectangle "==e_label\n<color:e_color><$e_sprite></color>\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<e_stereo>> as e_alias
+!enddefinelong
 
-
-/'
-........................................
-
-Creates an aliased labeled entity with a sprite and stereotype
-
-7 parameters
-
-    e_alias   The entity alias       Ex: my_alias
-    e_stereo  The entity stereotype  Ex: my_stereotype 
-    e_label   The sprite label       Ex: my_label
-    e_sprite  The sprite to add      Ex: my_sprite
-    e_color   The sprite color       Ex: Red
-    e_scale   The sprite scale       Ex: 0.5
-    e_type    The entity type        Ex: component
-
-........................................
-'/
-!define SPRITE_ENT_L(e_alias, e_stereo, e_label, e_sprite, e_color = "Black", e_scale = "1", e_type = "rectangle") e_type "<color:e_color><$e_sprite{scale=e_scale}></color>\r e_label" as e_alias <<e_stereo>>
+!definelong SpriteEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
+rectangle "==e_label\n<color:e_color><$e_sprite></color>\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<e_stereo>> as e_alias
+!enddefinelong
