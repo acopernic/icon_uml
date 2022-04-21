@@ -54,10 +54,10 @@ skinparam defaultTextAlignment center
 '   e_stereo:   the stereotype, which can define additional styling
 !definelong SpriteEntity(e_type,e_alias,e_label,e_techn,e_color,e_scale,e_sprite,e_stereo) 
 'e_type "==e_label\n<color:e_color><$e_sprite{scale=e_scale}></color>\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" as e_alias <<e_stereo>>
-e_type "==e_label\n<color:e_color><$e_sprite{scale=e_scale}></color>\n//" as e_alias <<e_stereo>>
+e_type "==e_label\n<color:e_color><$e_sprite{scale=e_scale}></color>\n[e_techn]" as e_alias <<e_stereo>>
 !enddefinelong
 !definelong SpriteEntity(e_type,e_alias,e_label,e_techn,e_color,e_sprite,e_stereo) 
-e_type "==e_label\n<color:e_color><$e_sprite{scale=e_scale}></color>\n//" as e_alias <<e_stereo>>
+e_type "==e_label\n<color:e_color><$e_sprite{scale=e_scale}></color>\n[e_techn]" as e_alias <<e_stereo>>
 'e_type "==e_label\n<color:e_color><$e_sprite{scale=e_scale}></color>\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" as e_alias <<e_stereo>>
 !enddefinelong
 hide stereotype
