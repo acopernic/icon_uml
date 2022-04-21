@@ -48,7 +48,7 @@ ZFR1CReH8fnM3SyLpqvczRXCr8wj8DjmLNPdBe7i6OHEgovDOzwONY1G3Lo53GwUacBn4AHtgQNK77r-
 
 
 
-!define RAD_combiner21(e_type, e_alias, e_label, e_techn, e_color, e_scale) SpriteEntity(e_type, e_alias, e_label, e_techn, e_color, e_scale, combiner21, combiner21)
-!define RAD_combiner21(e_type, e_alias, e_label, e_techn, e_color) SpriteEntity(e_type, e_alias, e_label, e_techn, e_color, combiner21, combiner21)
+!define RAD_combiner21( e_type, e_alias, e_label, e_techn, e_color, e_scale) SpriteEntity( e_type, e_alias, e_label, e_techn, e_color, e_scale, combiner21, combiner21)
+!define RAD_combiner21( e_type, e_alias, e_label, e_techn, e_color) SpriteEntity( e_type, e_alias, e_label, e_techn, e_color, combiner21, combiner21)
 @enduml
 
