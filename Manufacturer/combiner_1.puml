@@ -44,7 +44,7 @@ DrU9hdc9Oruz-6kRPAwkescfg9xzny7yjJDNOH9_FZmlO2vzF0tb6Cr8yePMfcQ7J3R6L35MOZgegiIU
 ZFR1CReH8fnM3SyLpqvczRXCr8wj8DjmLNPdBe7i6OHEgovDOzwONY1G3Lo53GwUacBn4AHtgQNK77r-1MDYKciWPhnKfK4vF1f5M_FHafrCgvwm77tQ1T5J
 4IEK0ZbdUMbqzCn4kFh1iaQ_WxRYnF1N1_yF
 }
-SpriteEntityColoring(RadCombiner21)
+SpriteEntityColoring(combiner_1)
 !define RadCombiner21(e_alias, e_label, e_techn) SpriteEntity(e_alias, e_label, e_techn, SPRITE_SYMBOL_COLOR, combiner_1, combiner_1)
 !define RadCombiner21(e_alias, e_label, e_techn, e_descr) SpriteEntity(e_alias, e_label, e_techn, e_descr, SPRITE_SYMBOL_COLOR, combiner_1, combiner_1)
 @enduml
