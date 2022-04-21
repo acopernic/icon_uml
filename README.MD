@@ -12,15 +12,14 @@ Example:
 
 ```
 @startuml
-
+'to import the sprites needed - common is mandatory
 !define SPRITESURL https://acopernic.github.io/icon_uml/
 !include SPRITESURL/common.puml
 !include SPRITESURL/Manufacturer/commscope_era.puml
 
 RAD_commscope_era(rectangle,Repeteur,"Repeteur","380-3600",black,1)
-```
 @enduml
-
+```
 rectangle = type (rectangle, actor, etc.)
 Repeteur  = alias
 "Repeteur" = Title
