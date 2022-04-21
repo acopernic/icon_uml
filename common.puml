@@ -36,7 +36,7 @@ skinparam Arrow {
     FontSize 12
 }
 
-!definelong AzureEntityColoring(e_stereo)
+!definelong SpriteEntityColoring(e_stereo)
 skinparam rectangle<<e_stereo>> {
     BackgroundColor SPRITE_BG_COLOR
     BorderColor SPRITE_BORDER_COLOR
