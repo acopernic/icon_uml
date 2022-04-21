@@ -27,7 +27,8 @@ skinparam Arrow {
    skinparam rectangle<<e_stereo>> {
     BackgroundColor SPRITE_BG_COLOR
     BorderColor White
-	LineColor White
+    BorderThickness 0
+    LineColor White
     Shadowing false
     }
 !enddefinelong
