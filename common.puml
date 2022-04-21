@@ -1,17 +1,14 @@
 @startuml
 ' Colors
 ' ##################################
-'!define SPRITE_COLOR #0072C6 'Blue
 !define SPRITE_COLOR #000000 'Black
 !define SPRITE_BG_COLOR #FFFFFF 'White
-'!define SPRITE_BORDER_COLOR #3C7FC0 'Blue
 !define SPRITE_BORDER_COLOR #FFFFFF 'White
 !define SPRITE_SYMBOL_COLOR SPRITE_COLOR
 
 ' Styling
 ' ##################################
 
-!define TECHN_FONT_SIZE 10
 skinparam defaultTextAlignment center
 skinparam wrapWidth 200
 skinparam maxMessageSize 150
@@ -56,9 +53,11 @@ center footer <font color=red>Warning:</font> Created for discussion, needs to b
 '   e_alias:    the alias to give the entity
 '   e_stereo:   the stereotype, which can define additional styling
 !definelong SpriteEntity(e_type,e_alias,e_label,e_techn,e_color,e_scale,e_sprite,e_stereo) 
-e_type "==e_label\n<color:e_color><$e_sprite{scale=e_scale}></color>\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" as e_alias <<e_stereo>>
+'e_type "==e_label\n<color:e_color><$e_sprite{scale=e_scale}></color>\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" as e_alias <<e_stereo>>
+e_type "==e_label\n<color:e_color><$e_sprite{scale=e_scale}></color>\n//" as e_alias <<e_stereo>>
 !enddefinelong
 !definelong SpriteEntity(e_type,e_alias,e_label,e_techn,e_color,e_sprite,e_stereo) 
-e_type "==e_label\n<color:e_color><$e_sprite{scale=e_scale}></color>\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" as e_alias <<e_stereo>>
+e_type "==e_label\n<color:e_color><$e_sprite{scale=e_scale}></color>\n//" as e_alias <<e_stereo>>
+'e_type "==e_label\n<color:e_color><$e_sprite{scale=e_scale}></color>\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" as e_alias <<e_stereo>>
 !enddefinelong
 hide stereotype
