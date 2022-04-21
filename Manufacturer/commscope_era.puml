@@ -147,10 +147,9 @@ sprite $commscope_era {
 000000000000000000000000000000000000004534730000000000000000000000000000000003543740000000000000000000000000000000000000000000000000000000000000000000
 000000000000000000000000000000000000003434720000000000000000000000000000000003443730000000000000000000000000000000000000000000000000000000000000000000
 }
-!define DEV_ANDROID(_alias) ENTITY(rectangle,black,commscope_era,_alias,DEV ANDROID)
-!define DEV_ANDROID(_alias, _label) ENTITY(rectangle,black,commscope_era,_label, _alias,DEV ANDROID)
-!define DEV_ANDROID(_alias, _label, _shape) ENTITY(_shape,black,commscope_era,_label, _alias,DEV ANDROID)
-!define DEV_ANDROID(_alias, _label, _shape, _color) ENTITY(_shape,_color,commscope_era,_label, _alias,DEV ANDROID)
-skinparam folderBackgroundColor<<DEV ANDROID>> White
-skinparam bordercolor<<DEV ANDROID>> Blue
+SpriteEntityColoring(commscope_era)
+!define RAD_commscope_era(e_type,e_alias,e_label,e_techn,e_color,e_scale) SpriteEntity(e_type,e_alias,e_label,e_techn,e_color,e_scale,commscope_era,commscope_era)
+!define RAD_commscope_era(e_type,e_alias,e_label,e_techn,e_color) SpriteEntity(e_type, e_alias,e_label,e_techn,e_color,commscope_era,commscope_era)
+skinparam folderBackgroundColor<<commscope_era>> White
+skinparam bordercolor<<commscope_era>> Blue
 @enduml
