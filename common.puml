@@ -1,19 +1,12 @@
-/'
-    Macro pour différente taille de sprites
-	copernic v1.0 - 20220421
-'/
+' Azure-PlantUML, version 2.1.0
+' https://github.com/RicardoNiepel/Azure-PlantUML
 
-
-/'
-........................................
 ' Colors
 ' ##################################
-'!define SPRITE_COLOR #0072C6 'Blue
-!define SPRITE_COLOR #000000 'Black
-!define SPRITE_BG_COLOR #FFFFFF 'White
-'!define SPRITE_BORDER_COLOR #3C7FC0 'Blue
-!define SPRITE_BORDER_COLOR #FFFFFF 'White
-!define SPRITE_SYMBOL_COLOR SPRITE_COLOR
+!define AZURE_COLOR #0072C6
+!define AZURE_BG_COLOR #FFFFFF
+!define AZURE_BORDER_COLOR #3C7FC0
+!define AZURE_SYMBOL_COLOR AZURE_COLOR
 
 ' Styling
 ' ##################################
@@ -35,10 +28,10 @@ skinparam Arrow {
     FontSize 12
 }
 
-!definelong SpriteEntityColoring(e_stereo)
+!definelong AzureEntityColoring(e_stereo)
 skinparam rectangle<<e_stereo>> {
-    BackgroundColor SPRITE_BG_COLOR
-    BorderColor SPRITE_BORDER_COLOR
+    BackgroundColor AZURE_BG_COLOR
+    BorderColor AZURE_BORDER_COLOR
 }
 !enddefinelong
 
@@ -58,10 +51,10 @@ center footer <font color=red>Warning:</font> Created for discussion, needs to b
 ' Elements
 ' ##################################
 
-!definelong SpriteEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
+!definelong AzureEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
 rectangle "==e_label\n<color:e_color><$e_sprite></color>\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<e_stereo>> as e_alias
 !enddefinelong
 
-!definelong SpriteEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
+!definelong AzureEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
 rectangle "==e_label\n<color:e_color><$e_sprite></color>\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<e_stereo>> as e_alias
 !enddefinelong
