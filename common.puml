@@ -3,10 +3,12 @@
 
 ' Colors
 ' ##################################
-!define AZURE_COLOR #0072C6
-!define AZURE_BG_COLOR #FFFFFF
-!define AZURE_BORDER_COLOR #3C7FC0
-!define AZURE_SYMBOL_COLOR AZURE_COLOR
+'!define SPRITE_COLOR #0072C6 'Blue
+!define SPRITE_COLOR #000000 'Black
+!define SPRITE_BG_COLOR #FFFFFF 'White
+'!define SPRITE_BORDER_COLOR #3C7FC0 'Blue
+!define SPRITE_BORDER_COLOR #FFFFFF 'White
+!define SPRITE_SYMBOL_COLOR SPRITE_COLOR
 
 ' Styling
 ' ##################################
@@ -30,8 +32,8 @@ skinparam Arrow {
 
 !definelong AzureEntityColoring(e_stereo)
 skinparam rectangle<<e_stereo>> {
-    BackgroundColor AZURE_BG_COLOR
-    BorderColor AZURE_BORDER_COLOR
+    BackgroundColor SPRITE_BG_COLOR
+    BorderColor SPRITE_BORDER_COLOR
 }
 !enddefinelong
 
