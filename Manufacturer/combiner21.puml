@@ -45,7 +45,7 @@ ZFR1CReH8fnM3SyLpqvczRXCr8wj8DjmLNPdBe7i6OHEgovDOzwONY1G3Lo53GwUacBn4AHtgQNK77r-
 4IEK0ZbdUMbqzCn4kFh1iaQ_WxRYnF1N1_yF
 }
 
-!define RAD_Combiner21(e_alias, e_label, e_techn, e_scale) ENTITY(rectangle, e_alias, e_label, e_techn, #D86613, e_scale, combiner21, combiner21)
-!define RAD_Combiner21(e_alias, e_label, e_techn) ENTITY(rectangle, e_alias, e_label, e_techn, #D86613, combiner21, combiner21)
+!function RAD_Combiner21(e_alias,e_label,e_techn, e_scale) ENTITY(rectangle,e_alias,e_label,e_techn,#D86613,e_scale,combiner21,combiner21)
+!function RAD_Combiner21(e_alias,e_label,e_techn) ENTITY(rectangle, e_alias,e_label,e_techn,#D86613,combiner21,combiner21)
 @enduml
 
