@@ -13,7 +13,7 @@
 !define SPRITE_BG_COLOR #FFFFFF 'White
 '!define SPRITE_BORDER_COLOR #3C7FC0 'Blue
 !define SPRITE_BORDER_COLOR #FFFFFF 'White
-!define SRPITE_SYMBOL_COLOR SPRITE_COLOR
+!define SPRITE_SYMBOL_COLOR SPRITE_COLOR
 
 ' Styling
 ' ##################################
