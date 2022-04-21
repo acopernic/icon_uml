@@ -10,16 +10,16 @@
 ' ##################################
 
 skinparam defaultTextAlignment center
-skinparam wrapWidth 200
-skinparam maxMessageSize 150
-skinparam rectangle {
-    StereotypeFontSize 10
-}
-skinparam Arrow {
-    Color #666666
-    FontColor #666666
-    FontSize 12
-}
+'skinparam wrapWidth 200
+'skinparam maxMessageSize 150
+'skinparam rectangle {
+'    StereotypeFontSize 10
+'}
+'skinparam Arrow {
+'    Color #666666
+'    FontColor #666666
+'    FontSize 12
+'}
 !definelong SpriteEntityColoring(e_stereo)
    skinparam rectangle<<e_stereo>> {
     BackgroundColor SPRITE_BG_COLOR
@@ -32,15 +32,15 @@ skinparam Arrow {
 ' Layout
 ' ##################################
 
-!definelong LAYOUT_AS_SKETCH
-skinparam backgroundColor #EEEBDC
-skinparam handwritten true
+'!definelong LAYOUT_AS_SKETCH
+'skinparam backgroundColor #EEEBDC
+'skinparam handwritten true
 'skinparam defaultFontName "Comic Sans MS"
-center footer <font color=red>Warning:</font> Created for discussion, needs to be validated
-!enddefinelong
+'center footer <font color=red>Warning:</font> Created for discussion, needs to be validated
+'!enddefinelong
 
-!define LAYOUT_TOP_DOWN top to bottom direction
-!define LAYOUT_LEFT_RIGHT left to right direction
+'!define LAYOUT_TOP_DOWN top to bottom direction
+'!define LAYOUT_LEFT_RIGHT left to right direction
 
 ' Elements
 ' ##################################
