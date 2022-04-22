@@ -10,6 +10,7 @@
 ' ##################################
 
 skinparam defaultTextAlignment center
+skinparam shadowing false
 'skinparam wrapWidth 200
 'skinparam maxMessageSize 150
 'skinparam rectangle {
@@ -23,7 +24,7 @@ skinparam defaultTextAlignment center
 !definelong SpriteEntityColoring(e_stereo)
    skinparam rectangle<<e_stereo>> {
     BackgroundColor SPRITE_BG_COLOR
-    BorderColor Transparent
+    BorderColor SPRITE_BG_COLOR
     BorderThickness 0
     Shadowing false
     }
@@ -57,7 +58,7 @@ skinparam defaultTextAlignment center
 e_type "==e_label\n<color:e_color><$e_sprite{scale=e_scale}></color>\n[e_techn]" as e_alias <<e_stereo>>
 !enddefinelong
 !definelong SpriteEntity(e_type,e_alias,e_label,e_techn,e_color,e_sprite,e_stereo) 
-e_type "==e_label\n<color:e_color><$e_sprite{scale=e_scale}></color>\n[e_techn]" as e_alias <<e_stereo>>
+e_type "==e_label\n<color:e_color><$e_sprite></color>\n[e_techn]" as e_alias <<e_stereo>>
 'e_type "==e_label\n<color:e_color><$e_sprite{scale=e_scale}></color>\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" as e_alias <<e_stereo>>
 !enddefinelong
 hide stereotype
